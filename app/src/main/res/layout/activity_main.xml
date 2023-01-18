@@ -6,13 +6,155 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button_number6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/number6"
+        app:layout_constraintBottom_toTopOf="@+id/button_number3"
+        app:layout_constraintStart_toEndOf="@+id/button_number5" />
+
+    <Button
+        android:id="@+id/button_number4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/number4"
+        app:layout_constraintBottom_toTopOf="@+id/button_number1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/minus_sign"
+        app:layout_constraintBottom_toTopOf="@+id/button_multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_number6" />
+
+    <Button
+        android:id="@+id/button_number5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/number5"
+        app:layout_constraintBottom_toTopOf="@+id/button_number2"
+        app:layout_constraintStart_toEndOf="@+id/button_number4" />
+
+    <Button
+        android:id="@+id/button_equal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/equal_sign"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_divide"
+        app:layout_constraintStart_toEndOf="@+id/button_number0"
+        tools:ignore="VisualLintButtonSize" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="207dp"
+        android:layout_height="142dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button_number8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/app_name"/>
 
+    <Button
+        android:id="@+id/button_number0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/number0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_number1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/number1"
+        app:layout_constraintBottom_toTopOf="@+id/button_number0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_number2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/number2"
+        app:layout_constraintBottom_toTopOf="@+id/button_equal"
+        app:layout_constraintStart_toEndOf="@+id/button_number1" />
+
+    <Button
+        android:id="@+id/button_number3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/number3"
+        app:layout_constraintBottom_toTopOf="@+id/button_equal"
+        app:layout_constraintStart_toEndOf="@+id/button_number2" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiply_sign"
+        app:layout_constraintBottom_toTopOf="@+id/button_equal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_number3" />
+
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/divide_sign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_number7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/number7"
+        app:layout_constraintBottom_toTopOf="@+id/button_number4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_number8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/number8"
+        app:layout_constraintBottom_toTopOf="@+id/button_number5"
+        app:layout_constraintEnd_toStartOf="@+id/button_number9"
+        app:layout_constraintStart_toEndOf="@+id/button_number7" />
+
+    <Button
+        android:id="@+id/button_number9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/number9"
+        app:layout_constraintBottom_toTopOf="@+id/button_number6"
+        app:layout_constraintEnd_toStartOf="@+id/button_plus" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/plus_sign"
+        app:layout_constraintBottom_toTopOf="@+id/button_minus"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
